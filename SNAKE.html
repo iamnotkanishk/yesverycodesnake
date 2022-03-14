@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SNAKE INC</title>
+    <marquee scrollamount="8" direction="left" behaviour="scroll" class="move">
+      <img src="snake game logo.png" style="height: 200px; width: 4 00px" />
+    </marquee>
+    <br>
+  </head>
+  <body>
+    <br/>
+    <style>
+      body {
+        height: 90vh;
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: white;
+        display: flex;
+      }
+
+      #game-board {
+        margin-top: 50px;
+        background-color: black;
+        text-align: center;
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        display: grid;
+        grid-template-rows: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+        align-self: flex-end;
+      }
+      .move {
+        position: absolute;
+        margin-top: 10px;
+        top: 0;
+      }
+
+      .snake {
+        background-color: greenyellow ;
+        border:.25vmin solid black;
+      }
+
+      .food {
+        background-color: red;
+        border: .25vmin solid black;
+      }
+    </style>
+    <script src="game.js" defer type="module"></script>
+    <div id="game-board"></div>
+  </body>
+</html>
